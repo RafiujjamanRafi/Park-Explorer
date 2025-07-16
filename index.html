@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>National Park Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>🗺️ Park Explorer</h2>
+    <p>Find U.S. National Parks by State and Activity</p>
+
+    <div class="filters">
+      <select id="stateSelect">
+        <option value="">Select a State</option>
+      </select>
+
+      <select id="activitySelect">
+        <option value="">All Activities</option>
+      </select>
+    </div>
+
+    <!-- ✅ Summary and Pagination Moved Above Results -->
+    <h3 id="summary" class="summary"></h3>
+    <div id="pagination" class="pagination"></div>
+
+    <div id="results" class="results"></div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
