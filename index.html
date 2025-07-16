@@ -27,6 +27,19 @@
 
     <div id="results" class="results"></div>
 
+    <script>
+  const resizeObserver = new ResizeObserver(entries => {
+    for (let entry of entries) {
+      window.parent.postMessage({
+        type: 'resize',
+        height: entry.contentRect.height
+      }, '*');
+    }
+  });
+  resizeObserver.observe(document.body);
+</script>
+
+
 
   <script src="script.js"></script>
 </body>
